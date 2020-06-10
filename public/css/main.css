@@ -1,0 +1,202 @@
+body {
+	margin: 0;
+	--nav: rgba(0, 0, 0, 0.527);
+}
+
+.navbar ul.social {
+	display: flex;
+}
+.navbar ul.social li {
+	margin-right: 20px;
+	text-decoration: none;
+}
+
+.navbar-bottom {
+	width: 100%;
+	background-color: var(--nav);
+	position: absolute;
+	display: flex;
+}
+
+.navbar-buttons {
+	display: flex;
+	justify-content: right;
+}
+
+.navbar-bottom .container.navbar-container,
+.container.navbar-container {
+	width: 100%;
+	display: flex;
+	padding: 0px 5%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.GITcode a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 1.2rem;
+}
+
+.btns {
+	margin: 10px;
+}
+
+.partChallengeBTN {
+	border: none;
+	font-size: 1.1rem;
+	padding: 10px 15px;
+	border-radius: 5px;
+	background-color: #455e7d;
+	color: #ffffff;
+}
+
+/* -------------------- This is for the home page ----------------------- */
+
+.homePage {
+	display: flex;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	justify-content: center;
+	text-align: center;
+}
+.homePage h1 {
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+	top: 20%;
+}
+
+.homeSection {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	vertical-align: middle;
+	height: auto;
+	width: auto;
+}
+
+.card a {
+	text-decoration: none;
+	color: white;
+}
+
+.card h3 {
+	font-size: 4rem;
+	margin-top: -90px;
+}
+
+.card {
+	width: 300px;
+	height: 200px;
+	color: white;
+	border-radius: 5px;
+	overflow: hidden;
+	-webkit-box-shadow: 10px 10px 16px -11px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 16px -11px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 16px -11px rgba(0, 0, 0, 0.75);
+	align-self: center;
+	margin: 50px;
+}
+
+.snowCard {
+	background-image: url('/public/images/winter.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.rainCard {
+	background-image: url('/public/images/rainBTN.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* -------------------- This is for the snow page ----------------------- */
+
+.snowPage {
+	background-image: url('/public/images/snow.jpg');
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.snowText h1 {
+	font-family: 'Kanit', sans-serif;
+	position: absolute;
+	left: 50%;
+	bottom: 10%;
+	color: rgba(255, 255, 255, 0.692);
+	font-size: 12rem;
+
+	transform: translate(-50%, -10%);
+}
+
+.playBtn {
+	position: absolute;
+	border: none;
+	font-size: 1.1rem;
+	padding: 10px 15px;
+	border-radius: 5px;
+	background-color: #99d5da;
+	color: #041d6d;
+	left: 50%;
+	top: 20%;
+	transform: translate(-50%, -20%);
+	cursor: pointer;
+}
+.playBtn:hover {
+	background-color: #05464b;
+	color: #dfdfdf;
+	cursor: pointer;
+}
+
+@media (max-width: 578px) {
+	.snowText h1 {
+		left: 50%;
+		bottom: 15%;
+		font-size: 7rem;
+		transform: translate(-50%, -15%);
+	}
+
+	.rainText h1 {
+		left: 50%;
+		bottom: 15%;
+		font-size: 7rem !important;
+		transform: translate(-50%, -15%);
+	}
+
+	.card {
+		margin: 10px;
+	}
+
+	.homeSection {
+		height: 0;
+		align-self: center;
+		margin-top: -230px;
+	}
+}
+
+/* -------------------- This is for the rain page ----------------------- */
+
+.rainPage {
+	background-image: url('/public/images/rain.jpg');
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.rainText h1 {
+	font-family: 'Kanit', sans-serif;
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+	color: rgba(206, 206, 206, 0.61);
+	font-size: 12rem;
+	transform: translate(-50%, -5%);
+}
