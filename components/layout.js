@@ -16,7 +16,7 @@ module.exports = ({ content }) => {
           <nav class="navbar navbar-bottom">
             <div class="container navbar-container">
               <div class="GITcode">
-                <a href="#">
+                <a href="https://github.com/shawnpatrick777/asymmetrick-challenge">
                   <h3 class="title">Get the Code</h3>
                 </a>
               </div>
